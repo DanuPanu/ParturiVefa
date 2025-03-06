@@ -35,7 +35,7 @@ const Gallery: React.FC = () => {
 
   const reviews = [
     { text: "Uskomattoman ystävällinen palvelu! Tämä parturiliike on ehdottomasti siistein ja mukavin, jossa olen ikinä käynyt. Sisustus ja ilmapiiri ovat todella lämminhenkisiä. Suosittelen lämpimästi!", author: "Ville" },
-    { text: "I visited Turkkilainen parturi Vefa and was thoroughly impressed. The owner is a true professional; my haircut was executed flawlessly with great attention to detail. The salon’s atmosphere is very welcoming and pleasant. The price-to-quality ratio is top-notch. I highly recommend it!", author: "Andre Pagi" },
+    { text: "I visited Turkkilainen parturi Vefa and was thoroughly impressed. The owner is a true professional; my haircut was executed flawlessly with great attention to detail. The salon&rsquo;s atmosphere is very welcoming and pleasant. The price-to-quality ratio is top-notch. I highly recommend it!", author: "Andre Pagi" },
     { text: "Erittäin hyvä ja miellyttävä kokemus. Todellinen ammattilainen, joka tekee laadukasta työtä. Päätin pysähtyä ajaessani ohi, kannatti! Menen varmasti uudestaan. 👍🏻", author: "JT" },
     { text: "Jos etsit hiusten ja parranleikkausten ammattilaista, Espon kaupungin korvaamatonta stylistiä, turkkilaista kampaajaa, jota et tule katumaan, tämän tulee ehdottomasti olla osoitteesi", author: "Hamdi Ordek" },
     { text: "Ystävällinen ja Ammattitaitoinen palvelu. Leikkaus juuri toiveiden mukaan. Suosittelen, Tulen käyttämään palveluita jatkossakin.", author: "Tony Öhman" },
@@ -46,8 +46,7 @@ const Gallery: React.FC = () => {
     <div className="p-4 bg-gray-100 text-gray-800">
       <div className="flex justify-between items-center mb-8">
         <Link href="/" className="hover:text-gray-600 flex-1 flex items-center gap-2">
-          <IoArrowBackCircleOutline size="32" />
-            <p className='hidden md:block md:text-md xl:text-2xl'>Etusivu</p>
+          <IoArrowBackCircleOutline size="32" /> Etusivu
         </Link>
         <h1 className="text-3xl md:text-4xl font-semibold text-center flex-grow flex-1">Galleria</h1>
         <div className="w-24 flex-1"></div> {/* Empty div to balance the layout */}
@@ -62,7 +61,7 @@ const Gallery: React.FC = () => {
         <SwiperCarousel
           slides={reviews.map((review, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-              <p className="text-base md:text-lg italic mb-4">"{review.text}"</p>
+              <p className="text-base md:text-lg italic mb-4">{review.text}</p>
               <div className="flex mb-2">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} className="text-yellow-500" />
