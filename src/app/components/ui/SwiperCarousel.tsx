@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -11,26 +11,34 @@ const SwiperCarousel: React.FC<{ slides: React.ReactNode[], spaceBetween? : numb
   return (
     <div className="swiper-container">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation]}
         spaceBetween={spaceBetween}
         loop={true}
         navigation
+        observer={true}
+        observeParents={true}
         className="custom-swiper"
         breakpoints={{
           320: {
-            slidesPerView: 2,
+        slidesPerView: 2,
           },
           560: {
-            slidesPerView: 3,
+        slidesPerView: 3,
           },
           768: {
-            slidesPerView: 3,
+        slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 4,
+        slidesPerView: 4,
           },
           1440: {
-            slidesPerView: 5,
+        slidesPerView: 5,
+          },
+          1920: {
+        slidesPerView: 6,
+          },
+          2560: {
+        slidesPerView: 7,
           },
         }}
       >

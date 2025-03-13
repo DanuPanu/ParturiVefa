@@ -132,50 +132,60 @@
 .swiper-container .swiper-button-prev,
 .swiper-container .swiper-button-next {
   position: absolute;
-  background-color: rgba(49, 47, 47, 0.8);
+  background-color: rgba(0, 0, 0, 0.6); /* Subtle background color */
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px; /* Adjusted size */
+  height: 45px; /* Adjusted size */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  opacity: 0.6;
-  color: #fff; /* Change the color as needed */
-  transition: background-color 0.3s, transform 0.3s;
+  opacity: 0.8;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
 }
 
 .swiper-container .swiper-button-prev:hover,
 .swiper-container .swiper-button-next:hover {
-  background-color: rgba(49, 47, 47, 1);
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
   transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced box shadow on hover */
 }
 
 .image_carousel .swiper-button-prev {
-  left: 5px; /* Adjust this value to position the left button */
+  left: 10px; /* Adjusted positioning */
 }
 
 .image_carousel .swiper-button-next {
-  right: 5px; /* Adjust this value to position the right button */
+  right: 10px; /* Adjusted positioning */
 }
 
 .review-carousel .swiper-button-prev {
-  left: 5px; /* Adjust this value to position the left button */
-  top: 9rem;
+  left: 10px; /* Adjusted positioning */
+  top: 50%; /* Center vertically */
 }
 
 .review-carousel .swiper-button-next {
-  right: 5px;
-  top: 9rem;
+  right: 10px; /* Adjusted positioning */
+  top: 50%; /* Center vertically */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 425px) {
   .image_carousel .swiper-button-next {
-    right: 10px; /* Adjust this value as needed for smaller screens */
+    right: 10px; /* Adjusted positioning for smaller screens */
   }
 
   .image_carousel .swiper-button-prev {
-    left: 10px; /* Adjust this value as needed for smaller screens */
+    left: 10px; /* Adjusted positioning for smaller screens */
   }
 
   .image_carousel .swiper-slide {

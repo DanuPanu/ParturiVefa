@@ -3,10 +3,9 @@ import React from 'react';
 import { FaInstagram, FaFacebook, FaTiktok } from "react-icons/fa";
 import { IoPhonePortraitOutline } from 'react-icons/io5';
 
-
 const Footer: React.FC = () => {
   return (
-    <footer className="flex justify-center p-4 bg-[#312F2F] text-white">
+    <footer className="flex justify-center p-4 bg-[#312F2F] text-white w-full mt-auto">
       <div className="text-sm flex gap-2 items-center">
         <Link href="/" className='flex gap-2 items-center'>
           <IoPhonePortraitOutline size={24}/>
