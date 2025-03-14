@@ -23,17 +23,18 @@ const Gallery: React.FC = () => {
   };
 
   const barberPictures = [
-    { src: "/images/hiukset1.jpg"},
-    { src: "/images/hair4.jpg"},
-    { src: "/images/hiukset2.jpg"},
-    { src: "/images/hair2.jpg"},
-    { src: "/images/hiukset3.jpg"},
-    { src: "/images/hair6.jpg"},
-    { src: "/images/hiukset4.jpg"},
-    { src: "/images/hair3.jpg"},
+    { src: "/images/hiukset1.webp"},
+    { src: "/images/hair4.webp"},
+    { src: "/images/hiukset2.webp"},
+    { src: "/images/hair2.webp"},
+    { src: "/images/hiukset3.webp"},
+    { src: "/images/hair6.webp"},
+    { src: "/images/hiukset4.webp"},
+    { src: "/images/hair3.webp"},
   ].map((image, index) => (
     <div key={index} className="image-container cursor-pointer" onClick={() => openModal(image.src)}>
-      <Image style={{ objectFit: "cover" }}  className='rounded border-3 border-[#ffd90050]' src={image.src} width={300} height={300}  alt={`Barber picture ${index + 1}`} />
+      <Image style={{ objectFit: "cover" }}  className='rounded border-3 border-[#ffd90050]' src={image.src} width={300} height={300}  alt={`Barber picture ${index + 1}`} loading="lazy"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
     </div>
   ));
 
@@ -65,20 +66,20 @@ const Gallery: React.FC = () => {
             <IoArrowBackCircleOutline className="text-[#FFD700] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
             <p className='golden-base golden2 text-sm sm:text-base md:text-lg lg:text-xl'>Etusivu</p>
             </Link>
-          <h1 className="golden-base golden4 text-center flex-grow flex-1">Galleria</h1>
+            <h1 className="golden-base golden4 text-center flex-grow flex-1">Galleria</h1>
           <div className="w-24 flex-1"></div> {/* Empty div to balance the layout */}
         </div>
         <section className="image_carousel mb-8 flex justify-center flex-col">
           <SwiperCarousel slides={barberPictures} spaceBetween={30} />
         </section>
 
-        <section className="review-carousel mb-8">
+        <section className="review-carousel">
           <div className='text-center'>
             <h2 className="golden-base golden3 text-2xl font-medium md:font-semi-bold mb-4 text-center">Asiakkaiden kokemuksia</h2>
           </div>
           <SwiperCarousel
             slides={reviews.map((review, index) => (
-              <div key={index} className="bg-[#fafafa10] p-6 rounded-lg flex flex-col items-center">
+              <div key={index} className="bg-[#fafafa10] p-4 rounded-lg flex flex-col items-center">
                 <p className="text-white md:text-lg italic mb-4">{review.text}</p>
                 <div className="flex mb-2">
                   {[...Array(5)].map((_, i) => (
