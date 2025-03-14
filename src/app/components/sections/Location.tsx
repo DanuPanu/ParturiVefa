@@ -2,9 +2,11 @@ import React from 'react';
 
 const Location: React.FC = () => {
   return (
-    <section className='bg-gray-100 text-gray-800 pt-5'>
-      <h2 className="text-3xl font-semibold text-center">Sijanti</h2>
-      <div className="flex flex-col justify-between items-center px-4 text-gray-800">
+    <section className='text-gray-800 pt-5'>
+      <div className='text-center'>
+        <h2 className="golden-base golden3 text-3xl font-semibold">Sijainti</h2>
+      </div>
+      <div className="flex flex-col justify-between items-center px-4">
         <div className="w-full md:w-2/3 p-4">
           <div className="w-full h-96 pb-3"> {/* Increased height */}
             <iframe
@@ -12,13 +14,17 @@ const Location: React.FC = () => {
               width="100%"
               height="100%"
               allowFullScreen={false}
+              style={{
+                border: 0,
+                filter: "invert(90%) hue-rotate(180deg)", // Dark mode effect
+              }}
               loading="lazy"
             ></iframe>
           </div>
         </div>
-        <div className="w-full md:w-1/3 p-4 md:ml-4 text-center">
-          <h2 className="text-3xl font-semibold mb-2">Aukioloajat</h2>
-          <div className="text-lg">
+        <div className="w-full md:w-2/3 p-4 text-center flex flex-col">
+          <h2 className="golden-base golden3 text-3xl font-semibold mb-2">Aukioloajat</h2>
+          <div className="golden-base golden2 text-lg">
             <p>Maanantai - Perjantai: 9:00 - 18:00</p>
             <p>Lauantai: 9:00 - 15:00 </p>
             <p>Sunnuntai: Suljettu</p>
