@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import React from 'react';
-import { FaPhone, FaInstagram, FaFacebook, FaTiktok } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
