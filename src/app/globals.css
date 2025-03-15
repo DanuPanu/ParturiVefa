@@ -125,6 +125,26 @@
   }
 }
 
+@font-face {
+  font-family: 'OmaFonttiOtsikko';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OmaFontti';
+  src: url('/fonts/InterTight-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'OmaFontti', sans-serif;
+}
+
+
+
 .block {
   padding: 1em;
   text-align: center;
@@ -148,6 +168,7 @@
     0px 0.5px 0.5px rgba(255, 255, 0, 0.3), 
     0px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+  font-size: 1.2em;
 }
 
 .golden3 {
@@ -157,6 +178,15 @@
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 2em;
+}
+
+.goldenVali {
+  background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
+  text-shadow: 
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
+    -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+  font-size: 1.3em;
 } 
 
 .golden4 {
@@ -166,6 +196,7 @@
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 4em;
+  font-family: 'OmaFonttiOtsikko', sans-serif;
 } 
 
 .goldenFooter {
@@ -174,7 +205,7 @@
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  font-size: 1.5em;
+  font-size: 1em;
 } 
 
 .swiper-container {
@@ -244,8 +275,13 @@
   }
 
   .golden4 {
-    font-size: 2.5em;
+    font-size: 3em;
   } 
+
+  .golden2{
+    font-size: 1em;
+  }
+  
 }
 
 @media (max-width: 330px) {

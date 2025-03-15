@@ -4,7 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col justify-center items-center h-screen text-white text-center p-4 relative">
+    <section className="flex flex-col justify-center items-center h-screen text-white text-center relative mb-3">
       <div className="relative z-10">
         <h1 className="golden-base golden4 font-bold mb-4 text-[white]">Tervetuloa Vefalle!</h1> <br/>
         <p className="golden-base golden2 text-xl mb-8">Hiusten ja parran leikkausta ystävällisellä ammattitaidolla Espoossa</p> <br/>
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
       </div>
-      <Image src="/images/vefaShop2.jpg" layout="fill" objectFit="cover" alt="Background" className="absolute inset-0 w-full h-full object-cover z-0 blur-[2px]" />
+      <Image src="/images/vefaShop2.webp" layout="fill" objectFit="cover" alt="Background" className="absolute inset-0 w-full h-full object-cover z-0 blur-[2px]" />
     </section>
   );
 };

@@ -10,7 +10,7 @@ export default function Home() {
       <div className="flex-grow">
         <Hero />
         <div className="max-w-screen-xl mx-auto">
-          <Info />
+          <Info/>
           <Pricing />
           <Location />
         </div>

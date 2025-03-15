@@ -33,7 +33,7 @@ const Gallery: React.FC = () => {
     { src: "/images/hair3.webp"},
   ].map((image, index) => (
     <div key={index} className="image-container cursor-pointer" onClick={() => openModal(image.src)}>
-      <Image style={{ objectFit: "cover" }}  className='rounded border-3 border-[#ffd90050]' src={image.src} width={300} height={300}  alt={`Barber picture ${index + 1}`} loading="lazy"
+      <Image style={{ objectFit: "cover" }}  className='rounded border-3 border-[#ffd90050]' src={image.src} width={250} height={250} alt={`Barber picture ${index + 1}`} loading="lazy"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
     </div>
   ));
@@ -66,7 +66,7 @@ const Gallery: React.FC = () => {
             <IoArrowBackCircleOutline className="text-[#FFD700] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
             <p className='golden-base golden2 text-sm sm:text-base md:text-lg lg:text-xl'>Etusivu</p>
             </Link>
-            <h1 className="golden-base golden4 text-center flex-grow flex-1">Galleria</h1>
+            <h1 className="golden-base golden4 m-0 text-center flex-grow flex-1">Galleria</h1>
           <div className="w-24 flex-1"></div> {/* Empty div to balance the layout */}
         </div>
         <section className="image_carousel mb-8 flex justify-center flex-col">
@@ -74,8 +74,8 @@ const Gallery: React.FC = () => {
         </section>
 
         <section className="review-carousel">
-          <div className='text-center'>
-            <h2 className="golden-base golden3 text-2xl font-medium md:font-semi-bold mb-4 text-center">Asiakkaiden kokemuksia</h2>
+          <div className='text-center mb-2'>
+            <h2 className="golden-base golden3">Asiakkaiden kokemuksia</h2>
           </div>
           <SwiperCarousel
             slides={reviews.map((review, index) => (
