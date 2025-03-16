@@ -35,7 +35,7 @@ export default function RootLayout({
         <meta property="og:title" content={String(metadata.title) ?? ""} />
         <meta property="og:description" content={metadata.description ?? ""} />
         <meta property="og:image" content="/path/to/image.jpg" />
-        <meta property="og:url" content="https://oma-domain.com" />
+        <meta property="og:url" content="https://parturivefa.fi" />
         <meta property="og:type" content="website" />
 
         <link rel="icon" href="/favicon.ico" />
