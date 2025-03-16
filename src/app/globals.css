@@ -276,12 +276,11 @@ body {
 
   .golden4 {
     background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-    text-shadow: 
+    /* text-shadow: 
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.6),
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-    mix-blend-mode: soft-light;
-    text-rendering: optimizeLegibility;
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3); */
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
     font-size: 3em;
   } 
 
