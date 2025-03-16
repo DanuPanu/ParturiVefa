@@ -24,17 +24,14 @@ const Gallery: React.FC = () => {
 
   const barberPictures = [
     { src: "/images/hiukset1.webp"},
-    { src: "/images/hair4.webp"},
+    { src: "/images/muki.webp"},
+    { src: "/images/pyyhkeet.webp"},
+    { src: "/images/tuoli.webp"},
     { src: "/images/hiukset2.webp"},
-    { src: "/images/hair2.webp"},
-    { src: "/images/hiukset3.webp"},
-    { src: "/images/hair6.webp"},
-    { src: "/images/hiukset4.webp"},
-    { src: "/images/hair3.webp"},
+    { src: "/images/vaha.webp"},
   ].map((image, index) => (
     <div key={index} className="image-container cursor-pointer" onClick={() => openModal(image.src)}>
-      <Image style={{ objectFit: "cover" }}  className='rounded border-3 border-[#ffd90050]' src={image.src} width={250} height={250} alt={`Barber picture ${index + 1}`} loading="lazy"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      <Image style={{ objectFit: "cover" }}  className='rounded border-3 border-[#ffd90050]' src={image.src} width={300} height={300} alt={`Barber picture ${index + 1}`} loading="lazy"/>
     </div>
   ));
 
@@ -63,7 +60,7 @@ const Gallery: React.FC = () => {
       <div className="flex-grow px-4 bg-[#181818]">
         <div className="flex justify-between items-center">
             <Link href="/" className="hover:text-gray-600 flex-1 flex items-center gap-2">
-            <IoArrowBackCircleOutline className="text-[#FFE066] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
+            <IoArrowBackCircleOutline className="text-[white] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
             <p className='golden-base golden2 text-sm sm:text-base md:text-lg lg:text-xl'>Etusivu</p>
             </Link>
             <h1 className="golden-base golden4 m-0 text-center flex-grow flex-1">Galleria</h1>
@@ -80,13 +77,13 @@ const Gallery: React.FC = () => {
           <SwiperCarousel
             slides={reviews.map((review, index) => (
               <div key={index} className="bg-[#fafafa10] p-4 rounded-lg flex flex-col items-center">
-                <p className="text-white md:text-lg italic mb-4">{review.text}</p>
+                <p className="text-white sm:text-sm md:text-md lg:text-xl italic mb-4">{review.text}</p>
                 <div className="flex mb-2">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-yellow-500" />
                   ))}
                 </div>
-                <p className="text-sm md:text-base font-medium md:font-semibold text-white">- {review.author}</p>
+                <p className="text-sm md:text-base text-white">- {review.author}</p>
               </div>
             ))}
             spaceBetween={10}

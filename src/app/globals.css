@@ -98,75 +98,37 @@
 
 @font-face {
   font-family: 'OmaFontti';
-  src: url('/fonts/InterTight-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 400;
 }
 
 body {
   font-family: 'OmaFontti', sans-serif;
 }
 
-.block {
-  padding: 1em;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 2em;
-  text-rendering: optimizeLegibility;
-}
-
-.golden-base {
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 0.3em; 
-  margin-bottom: 0.2em;
-}
-
-.golden2, .golden3, .golden4, .goldenFooter, .goldenVali{
-  background-image: -webkit-linear-gradient(#FFF65C, #FFE066 25%, #f0c94a 75%);
-}
-
 .golden2 {
+  color: rgba(255, 255, 255, 0.87);
   font-size: 1.4em;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Varmistaa läpinäkyvyyden */
 }
 
 .golden3 {
-  font-size: 2.5em;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Varmistaa läpinäkyvyyden */
+  color: white;
+  font-size: 2.7em;
 }
 
 .goldenVali {
+  color: white;
   font-size: 1.3em;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Varmistaa läpinäkyvyyden */
 } 
 
 .golden4 {
-  font-size: 4em;
+  color: white;
+  font-size: 5em;
   font-family: 'OmaFonttiOtsikko', sans-serif;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Varmistaa läpinäkyvyyden */
 } 
 
 .goldenFooter {
-  font-size: 1em;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Varmistaa läpinäkyvyyden */
+  font-size: 1.5em;
 } 
 
 .swiper-container {
@@ -236,32 +198,28 @@ body {
   }
 
   .golden4 {
-    text-shadow: 0;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
     font-size: 3em;
-    text-shadow: none;
   } 
 
   .golden2{
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
-    font-size: 1em;
-    text-shadow: none;
+    font-size: 1.1em;
   }
 
   .golden3{
     font-size: 1.9em;
-    text-shadow: none;
+  }
+
+  .goldenFooter{
+    font-size: 1.2em;
   }
   
 }
 
 @media (max-width: 330px) {
   .golden4 {
-    background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
     font-size: 1.7em;
   } 
   .golden3{
-    background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
     font-size: 1.5em;
   }
 }

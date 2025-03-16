@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Pricing: React.FC = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center px-4 text-gray-800">
+    <section className="flex flex-col md:flex-row items-center px-4 mb-3 text-gray-800">
       <div className="flex flex-col w-full md:w-1/2 px-4 mb-5 text-center md:text-left">
         <h2 className="golden-base golden3 mb-4">Hinnasto</h2>
         <ul className="mb-4 golden-base golden2">
@@ -37,13 +37,13 @@ const Pricing: React.FC = () => {
             <span className="flex-grow border-dotted border-b border-gray-400 mx-2"></span>
             <span>3€</span>
           </li>
-          <li className="mb-2 flex justify-between">
+          <li className="mb-3 flex justify-between">
             <span>Päähieronta</span>
             <span className="flex-grow border-dotted border-b border-gray-400 mx-2"></span>
             <span>15€</span>
           </li>
 
-          <h2 className="golden-base goldenVali">Partapalvelut</h2>
+          <h2 className="golden-base goldenVali mb-2">Partapalvelut</h2>
           <li className="mb-2 flex justify-between">
             <span>Täyden palvelun parranajo</span>
             <span className="flex-grow border-dotted border-b border-gray-400 mx-2"></span>

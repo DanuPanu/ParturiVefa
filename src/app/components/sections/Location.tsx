@@ -2,12 +2,12 @@ import React from 'react';
 
 const Location: React.FC = () => {
   return (
-    <section className='text-gray-800 py-1 mb-2'>
+    <section className='text-gray-800 py-1 mb-5'>
       <div className='text-center'>
         <h2 className="golden-base golden3">Sijainti</h2>
       </div>
       <div className="flex flex-col justify-between items-center px-4">
-        <div className="w-full md:w-2/3 px-4 py-2">
+        <div className="w-full md:w-2/3 px-4 py-2 mb-5">
           <div className="w-full h-96"> {/* Increased height */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.018874406328!2d24.744346685313488!3d60.18720898990452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df5490ee884c5%3A0x93665b6cdd64bf9!2sTurkkilainen%20parturi%20Vefa!5e0!3m2!1sfi!2sfi!4v1741163760509!5m2!1sfi!2sfi"
