@@ -38,6 +38,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
 
         <link rel="icon" href="/images/logo.png" />
+        <meta name="google-site-verification" content="rZftcnffDNAm3iD2Kh7IdxPFzbSi6YzTexjLQOxwNJM" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#181818]`}
