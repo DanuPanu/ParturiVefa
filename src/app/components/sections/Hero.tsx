@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section className="flex flex-col justify-center items-center h-screen text-white text-center relative mb-3">
       <div className="relative z-10">
-        <h1 className="golden-base golden4 font-bold mb-4 text-[white]">Tervetuloa Vefalle!</h1> <br/>
+        <h1 className="golden-base golden4 mb-4">Tervetuloa Vefalle!</h1> <br/>
         <p className="golden-base golden2 text-xl mb-8">Hiusten ja parran leikkausta ystävällisellä ammattitaidolla Espoossa</p> <br/>
         <p className="golden-base golden2 text-lg">Ota yhteyttä ja seuraa somessa!</p>
         <div className='flex justify-center items-center space-x-4 mt-4'>

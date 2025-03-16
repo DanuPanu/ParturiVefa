@@ -7,7 +7,7 @@ const Info: React.FC = () => {
     <section className="flex flex-col md:flex-row items-center px-4 mb-3">
       <div className="order-1 md:order-2 w-full md:w-1/2 p-4 text-center md:text-left">
         <h2 className="golden-base golden3">Meistä</h2>
-        <p className="golden-base golden2 text-lg md:text-xl">
+        <p className="golden-base golden2">
         Olemme perinteinen turkkilainen parturi Espoon Suurpellossa, jossa yhdistyvät laadukas käsityö, rento ilmapiiri ja aito asiakaspalvelu. <br/> <br/>
         Palveluihimme kuuluvat miesten hiustenleikkaus ja pesu, parran muotoilu sekä korva-, nenä- ja poskikarvojen poisto - kaikki ilman ajanvarausta. Meillä pääset aina nopeasti tuoliin, ja saat huolellisesti viimeistellyn lopputuloksen. <br/> <br/>
         Teen työtä tinkimättömällä ammattitaidolla ja intohimolla, ja minulle on kunnia-asia, että viihdyt liikkeessäni ja lähdet tyytyväisenä joka kerta. Haluan tarjota paitsi hyvän hiustenleikkuun, myös miellyttävän kokemuksen, johon on mukava palata. <br/> <br/>

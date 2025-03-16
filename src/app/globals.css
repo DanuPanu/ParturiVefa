@@ -168,7 +168,7 @@ body {
     0px 0.5px 0.5px rgba(255, 255, 0, 0.3), 
     0px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .golden3 {
@@ -177,7 +177,7 @@ body {
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .goldenVali {
@@ -193,7 +193,7 @@ body {
   background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
   text-shadow: 
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
-    -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
+    -0.5px -0.5px 0.5px rgba(255, 220, 0, 1),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 4em;
   font-family: 'OmaFonttiOtsikko', sans-serif;
@@ -280,6 +280,10 @@ body {
 
   .golden2{
     font-size: 1em;
+  }
+
+  .golden3{
+    font-size: 1.7em;
   }
   
 }
