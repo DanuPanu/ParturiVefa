@@ -46,14 +46,14 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(1 0 0), rgb(255, 255, 255);
+  --foreground: oklch(0.145 0 0), rgb(37, 37, 37);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.205 0 0), hsl(0, 0%, 20%);
+  --primary-foreground: oklch(0.985 0 0), hsl(0, 0%, 98%);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -79,41 +79,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
 }
 
 @layer base {
@@ -161,63 +126,63 @@ body {
 
 .golden2 {
   background-image: -webkit-linear-gradient(180deg, #E8D800, #E0CF00 25%, #A86800 75%, #734C00);
-  background-image: linear-gradient(180deg, #E8D800, #E0CF00 25%, #A86800 75%, #734C00);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   text-shadow: 
     0px 0.5px 0.5px rgba(255, 255, 0, 0.3), 
     0px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 1.4em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Varmistaa läpinäkyvyyden */
 }
 
 .golden3 {
   background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   text-shadow: 
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 2.5em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Varmistaa läpinäkyvyyden */
 }
 
 .goldenVali {
   background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   text-shadow: 
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Varmistaa läpinäkyvyyden */
 } 
 
 .golden4 {
   background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   text-shadow: 
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 1),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 4em;
   font-family: 'OmaFonttiOtsikko', sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Varmistaa läpinäkyvyyden */
 } 
 
 .goldenFooter {
   background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  background-image: linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   text-shadow: 
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
     -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Varmistaa läpinäkyvyyden */
 } 
 
 .swiper-container {
