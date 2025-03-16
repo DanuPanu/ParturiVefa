@@ -63,7 +63,7 @@ const Gallery: React.FC = () => {
       <div className="flex-grow px-4 bg-[#181818]">
         <div className="flex justify-between items-center">
             <Link href="/" className="hover:text-gray-600 flex-1 flex items-center gap-2">
-            <IoArrowBackCircleOutline className="text-[#FFD700] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
+            <IoArrowBackCircleOutline className="text-[#FFF65C] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
             <p className='golden-base golden2 text-sm sm:text-base md:text-lg lg:text-xl'>Etusivu</p>
             </Link>
             <h1 className="golden-base golden4 m-0 text-center flex-grow flex-1">Galleria</h1>

@@ -124,12 +124,11 @@ body {
   margin-bottom: 0.2em;
 }
 
+.golden2, .golden3, .golden4, .goldenFooter, .goldenVali{
+  background-image: -webkit-linear-gradient(#FFF65C, #FFE066 25%, #f0c94a 75%);
+}
+
 .golden2 {
-  background-image: -webkit-linear-gradient(180deg, #E8D800, #E0CF00 25%, #A86800 75%, #734C00);
-  text-shadow: 
-    0px 0.5px 0.5px rgba(255, 255, 0, 0.3), 
-    0px -0.5px 0.5px rgba(255, 220, 0, 0.5),
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 1.4em;
   -webkit-background-clip: text;
   background-clip: text;
@@ -138,11 +137,6 @@ body {
 }
 
 .golden3 {
-  background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  text-shadow: 
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
-    -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 2.5em;
   -webkit-background-clip: text;
   background-clip: text;
@@ -151,11 +145,6 @@ body {
 }
 
 .goldenVali {
-  background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  text-shadow: 
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
-    -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
   -webkit-background-clip: text;
   background-clip: text;
@@ -164,11 +153,6 @@ body {
 } 
 
 .golden4 {
-  background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  text-shadow: 
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
-    -0.5px -0.5px 0.5px rgba(255, 220, 0, 1),
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 4em;
   font-family: 'OmaFonttiOtsikko', sans-serif;
   -webkit-background-clip: text;
@@ -178,13 +162,9 @@ body {
 } 
 
 .goldenFooter {
-  background-image: -webkit-linear-gradient(135deg, #FFF65C 45%, #9A8000 75%);
-  text-shadow: 
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2),
-    -0.5px -0.5px 0.5px rgba(255, 220, 0, 0.5),
-    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   font-size: 1em;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent; /* Varmistaa läpinäkyvyyden */
 } 
@@ -259,15 +239,18 @@ body {
     text-shadow: 0;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
     font-size: 3em;
+    text-shadow: none;
   } 
 
   .golden2{
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
     font-size: 1em;
+    text-shadow: none;
   }
 
   .golden3{
     font-size: 1.9em;
+    text-shadow: none;
   }
   
 }

@@ -13,7 +13,7 @@ const Info: React.FC = () => {
         Teen työtä tinkimättömällä ammattitaidolla ja intohimolla, ja minulle on kunnia-asia, että viihdyt liikkeessäni ja lähdet tyytyväisenä joka kerta. Haluan tarjota paitsi hyvän hiustenleikkuun, myös miellyttävän kokemuksen, johon on mukava palata. <br/> <br/>
         Selaa hiustyylejä ja asiakaspalautteita galleriasta!   
         </p>
-        <Link href="/gallery" className='inline-block px-6 py-2 my-3 text-[#FFD700] bg-black border border-[#FFD700] rounded hover:bg-brown-700 text-base md:px-8 md:py-3 md:text-xl'>Galleria</Link>
+        <Link href="/gallery" className='inline-block px-6 py-2 my-3 text-[#FFE066] bg-black border border-[#FFE066] rounded hover:bg-brown-700 text-base md:px-8 md:py-3 md:text-xl'>Galleria</Link>
       </div>
       <div className="order-2 md:order-1 w-full md:w-1/2 px-4">
         <Image src="/images/mestari.webp" alt="Placeholder" width={500} height={500} className="w-full h-auto max-h-[95vh] rounded" />
