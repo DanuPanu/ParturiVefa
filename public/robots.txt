@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /api/
+Allow: /favicon.ico
 
 Sitemap: https://www.turkkilainenparturivefa.fi/sitemap.xml
