@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="fi">
       <head>
         <title>{String(metadata.title) ?? ""}</title>
-        <meta name="description" content={metadata.description ?? ""} />
+        <meta name="description" content={String(metadata.description) ?? ""} />
         <meta name="keywords" content="parturi, hiustenleikkaus, parranleikkaus, Espoo, Suurpelto, ammattitaito, ystävällinen, parran ajo" />
         <meta name="author" content="Turkkilainen parturi Vefa" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
