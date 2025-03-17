@@ -98,8 +98,8 @@
 
 @font-face {
   font-family: 'OmaFontti';
-  src: url('/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype');
-  font-weight: 400;
+  src: url('/fonts/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100;
 }
 
 body {
@@ -107,8 +107,13 @@ body {
 }
 
 .golden2 {
-  color: rgba(255, 255, 255, 0.87);
+  color: white;
   font-size: 1.4em;
+}
+
+.goldenHero {
+  color: white;
+  font-size: 1.7em;
 }
 
 .golden3 {
@@ -202,7 +207,11 @@ body {
   } 
 
   .golden2{
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+
+  .goldenHero{
+    font-size: 1em;
   }
 
   .golden3{

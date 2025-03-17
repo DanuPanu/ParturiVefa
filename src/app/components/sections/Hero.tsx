@@ -7,11 +7,11 @@ const Hero: React.FC = () => {
     <section className="flex flex-col justify-center items-center h-screen text-white text-center relative mb-3">
       <div className="relative z-10">
         <h1 className="golden-base golden4">Tervetuloa Vefalle!</h1> <br/>
-        <p className="golden-base golden2">Hiusten ja parran leikkausta ystävällisellä ammattitaidolla Espoossa</p> <br/>
-        <p className="golden-base golden2">Ota yhteyttä ja seuraa somessa!</p>
+        <p className="golden-base goldenHero font-bold">Hiusten ja parran leikkausta ystävällisellä ammattitaidolla Espoossa</p> <br/>
+        <p className="golden-base goldenHero font-bold">Ota yhteyttä ja seuraa somessa!</p>
         <div className='flex justify-center items-center space-x-4 mt-4'>
             <FaPhone size="24" color='white'/>
-            <p className='golden-base golden2'>+358 44 2435821</p>
+            <p className='golden-base goldenHero font-bold'>+358 41 315 0796</p>
         </div>
 
         {/* Add social media links */}

@@ -23,11 +23,11 @@ const Gallery: React.FC = () => {
   };
 
   const barberPictures = [
-    { src: "/images/hiukset1.webp"},
-    { src: "/images/muki.webp"},
-    { src: "/images/pyyhkeet.webp"},
-    { src: "/images/tuoli.webp"},
     { src: "/images/hiukset2.webp"},
+    { src: "/images/pyyhkeet.webp"},
+    { src: "/images/muki.webp"},
+    { src: "/images/tuoli.webp"},
+    { src: "/images/hiukset1.webp"},
     { src: "/images/vaha.webp"},
   ].map((image, index) => (
     <div key={index} className="image-container cursor-pointer" onClick={() => openModal(image.src)}>
@@ -77,13 +77,13 @@ const Gallery: React.FC = () => {
           <SwiperCarousel
             slides={reviews.map((review, index) => (
               <div key={index} className="bg-[#fafafa10] p-4 rounded-lg flex flex-col items-center">
-                <p className="text-white sm:text-sm md:text-md lg:text-xl italic mb-4">{review.text}</p>
+                <p className="text-white sm:text-sm md:text-md lg:text-2xl italic mb-4">{review.text}</p>
                 <div className="flex mb-2">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-yellow-500" />
                   ))}
                 </div>
-                <p className="text-sm md:text-base text-white">- {review.author}</p>
+                <p className="text-sm md:text-base lg:text-lg text-white">- {review.author}</p>
               </div>
             ))}
             spaceBetween={10}

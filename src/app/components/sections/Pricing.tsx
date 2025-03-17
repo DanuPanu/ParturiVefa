@@ -37,13 +37,13 @@ const Pricing: React.FC = () => {
             <span className="flex-grow border-dotted border-b border-gray-400 mx-2"></span>
             <span>3€</span>
           </li>
-          <li className="mb-3 flex justify-between">
+          <li className="mb-5 flex justify-between">
             <span>Päähieronta</span>
             <span className="flex-grow border-dotted border-b border-gray-400 mx-2"></span>
             <span>15€</span>
           </li>
 
-          <h2 className="golden-base goldenVali mb-2">Partapalvelut</h2>
+          <h2 className="golden-base goldenVali mb-3">Partapalvelut</h2>
           <li className="mb-2 flex justify-between">
             <span>Täyden palvelun parranajo</span>
             <span className="flex-grow border-dotted border-b border-gray-400 mx-2"></span>
