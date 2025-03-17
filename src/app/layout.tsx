@@ -37,7 +37,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://www.turkkilainenparturivefa.fi/" />
         <meta property="og:type" content="website" />
 
-        <link rel="icon" href="/images/logo.png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="google-site-verification" content="rZftcnffDNAm3iD2Kh7IdxPFzbSi6YzTexjLQOxwNJM" />
       </head>
       <body
